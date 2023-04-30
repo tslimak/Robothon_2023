@@ -1,8 +1,8 @@
-![Robothon 2022 Repository of Team "Wall-E 3.0"](Title_robo.png?raw=true "Title")
+![Robothon 2022 Repository of Team "Wall-E 3.0"](Title_robo-3.png?raw=true "Title")
 
 
 # Equipment Used List
-![Equipment Images](Equipment_Images.png?raw=true "Title")
+![Equipment Images](Equipment_Images-3.png?raw=true "Title")
 - Franka Emika Panda Robot
 - Intel RealSense D435i
 - Standard PC with Ubuntu 18.04 (no GPU!)
@@ -16,7 +16,7 @@
 - Metal Tip (for Hand-Eye-Calibration)
 
 # Software Dependency List
-![Software Dependency Logos](logos.png?raw=true "Title")
+![Software Dependency Logos](logos-3.png?raw=true "Title")
 #### Robot (C++)
 - Ubuntu 20.04
 - Kernel: 5.9.1-rt20
@@ -60,7 +60,7 @@ catkin build
 ```
 
 ## Run the Taskboard
-![Screenshot of Project Running](Project_Running.png?raw=true "Title")
+![Screenshot of Project Running](Project_Running-2.png?raw=true "Title")
 Open four terminals and navigate to the `catkin_ws` folder in each. Run:
   1. `roslaunch task_planner run_application.launch`
   1. `roslaunch realsense2_camera rs_camera.launch align_depth:=true filters:=pointcloud ordered_pc:=true`
