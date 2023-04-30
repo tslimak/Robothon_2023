@@ -1,0 +1,1 @@
+The algorithms of the "motion_planner" are confidential. The "motion_planner" of the "robothon2023" project is based on the "dual_arm" package of the confidential project "m2a" (main branch; commit 91b80067 Update Gazebo Models). For details, contact jonas.wittmann@tum.de

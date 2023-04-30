@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<launch>
+    <include file="$(find dual_arm)/launch/dual_move_application.launch"/>
+    <rosparam file="$(find task_planner)/config/task_poses.yaml"/>
+    <rosparam file="$(find task_planner)/config/task_param.yaml"/>
+    <node pkg="task_planner" name="robothon2023_node" type="robothon2023_node" output="screen"/>
+</launch>

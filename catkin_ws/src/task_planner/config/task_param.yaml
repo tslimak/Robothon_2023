@@ -1,0 +1,130 @@
+# This file defines the task-specific parameterization for applying a force.
+task_planner:
+  button:
+    Kp_position: [ 3000.0, 3000.0, 3000.0, 700.0, 700.0, 700.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
+    Tn_force: [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 0.0, 0.0, 1.0, 0.0, 0.0, 0.0 ]
+    force: 20.0
+    use_wiggle: false
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: 0.10 # The push force error has to be less than this value.
+    motion_threshold: 0.06 # The TCP should not move more than this value in [m].
+  plug_removal:
+    Kp_position: [ 3000.0, 3000.0, 3000.0, 700.0, 700.0, 700.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
+    Tn_force: [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 0.0, 0.0, 1.0, 0.0, 0.0, 0.0 ]
+    force: -50.0
+    use_wiggle: false
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: -10.10 # The push force error has to be less than this value.
+    motion_threshold: 0.06 # The TCP should not move more than this value in [m].
+  plug_insertion:
+    Kp_position: [ 3000.0, 3000.0, 3000.0, 700.0, 700.0, 700.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
+    Tn_force: [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 0.0, 0.0, 1.0, 0.0, 0.0, 0.0 ]
+    force: 20.0
+    use_wiggle: true
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: -10.10 # The push force error has to be less than this value.
+    motion_threshold: 0.03 # The TCP should not move more than this value in [m].
+  pen_removal:
+    Kp_position: [ 3000.0, 3000.0, 3000.0, 700.0, 700.0, 700.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
+    Tn_force: [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 1.0, 0.0, 0.50, 0.0, 0.0, 0.0 ]
+    force: -20.0
+    use_wiggle: false
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: -10.10 # The push force error has to be less than this value.
+    motion_threshold: 0.03 # The TCP should not move more than this value in [m].
+  pen_insertion:
+    Kp_position: [ 3000.0, 3000.0, 3000.0, 700.0, 700.0, 700.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
+    Tn_force: [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    force: 3.0
+    use_wiggle: true
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: -10.10 # The push force error has to be less than this value.
+    motion_threshold: 0.03 # The TCP should not move more than this value in [m].
+  pen_stretch:
+    Kp_position: [ 300.0, 300.0, 300.0, 70.0, 70.0, 70.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 3.0, 3.0, 3.0, 3.0, 3.0, 3.0 ]
+    Tn_force: [ 8.0, 8.0, 8.0, 8.0, 8.0, 8.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    force: 8.0
+    use_wiggle: false
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: -1000.10 # The push force error has to be less than this value.
+    motion_threshold: 1.03 # The TCP should not move more than this value in [m].
+  pen_stretch_2:
+    Kp_position: [ 0.0, 300.0, 300.0, 70.0, 70.0, 70.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    Tn_force: [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    force: 3.0
+    use_wiggle: false
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: -1000.10 # The push force error has to be less than this value.
+    motion_threshold: 1.03 # The TCP should not move more than this value in [m].
+  pen_back_insertion:
+    Kp_position: [ 3000.0, 3000.0, 3000.0, 700.0, 700.0, 700.0 ]
+    Tn_position: [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+    Tv_position: [ 0.05, 0.05, 0.05, 0.005, 0.005, 0.005 ]
+    Kp_force: [ 1.5, 1.5, 1.5, 1.5, 1.5, 1.5 ]
+    Tn_force: [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+    Tv_force: [ 0.01, 0.01, 0.01, 0.01, 0.01, 0.01 ]
+    force_dir_in_tcp: [ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    force: 10.0
+    use_wiggle: true
+    f_trans: 2.0
+    f_rot: 4.0
+    A_trans: 0.001
+    A_rot: 0.15
+    force_threshold: -10.10 # The push force error has to be less than this value.
+    motion_threshold: 0.03 # The TCP should not move more than this value in [m].

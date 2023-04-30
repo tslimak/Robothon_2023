@@ -1,0 +1,111 @@
+# Defines the end effector coordinates for the tasks on the board. Note that the poses are given for the end effector
+# frame w.r.t. to the task board reference frame. Quaternions: w, x, y, z.
+task_planner:
+  blue_button:
+    position: [ 0.10, 0.02, 0.005 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  red_button:
+    position: [ 0.08, 0.02, 0.005 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  lid_closed:
+    position: [ -0.02, 0.162, 0.08 ]
+    orientation: [ 0.3535534, 0.6123724, -0.6123724, -0.3535534 ]
+  lid_open_1:
+    position: [ -0.07, 0.162, 0.13 ]
+    orientation: [ 0.3535534, 0.6123724, -0.6123724, -0.3535534 ]
+  lid_open_2:
+    position: [ -0.12, 0.162, 0.03 ]
+    orientation: [ 0.0616284, 0.704416, -0.704416, -0.0616284 ]
+  lid_open_3:
+    position: [ -0.12, 0.162, 0.23 ]
+    orientation: [ 0.0616284, 0.704416, -0.704416, -0.0616284 ]
+  slider_down:
+    position: [ 0.009, 0.056, 0.002 ]
+    orientation: [ 0.3535534 , 0.6123724, 0.6123724, -0.3535534 ]
+  slider_up:
+    position: [ 0.045, 0.056, 0.002 ]
+    orientation: [ 0.0, 0.707,  0.707, 0.0 ]
+  plug_black:
+    position: [ 0.10, 0.08, 0.005 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  plug_red:
+    position: [ 0.075, 0.081, 0.005 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  pen:
+    position: [ 0.113, 0.227, 0.0 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  after_pen:
+    position: [ 0.2, 0.35, 0.05 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  after_pen2:
+    position: [ 0.2, 0.35, 0.25 ]
+    orientation: [ 0.5, 0.5, -0.5, 0.5 ]
+  pen_insertion:
+    position: [ 0.048, 0.158, 0.105 ]
+    orientation: [ 0.5, 0.5, -0.5, 0.5 ]
+  after_pen_insertion:
+    position: [ 0.048, 0.158, 0.255 ]
+    orientation: [ 0.5, 0.5, -0.5, 0.5 ]
+  after_pen_insertion_2:
+    position: [ 0.15, 0.158, 0.455 ]
+    orientation: [ 0.5, 0.5, -0.5, 0.5 ]
+  after_pen_insertion_2_rotated:
+    position: [ 0.15, 0.158, 0.455 ]
+    orientation: [ 0.0, -0.707, 0.0, 0.707 ]
+  after_pen_insertion_3:
+    position: [ 0.15, 0.158, 0.655 ]
+    orientation: [ 0.0, -0.707, 0.0, 0.707 ]
+  pen_stretch:
+    position: [ 0.248, 0.11, 1.0 ]
+    orientation: [ 0.0, -0.707, 0.0, 0.707 ]
+  pen_stretch_below:
+    position: [ 0.248, 0.11, 0.8 ]
+    orientation: [ 0.0, -0.707, 0.0, 0.707 ]
+  screen_detection:
+    position: [ 0.05, -0.08, 0.140 ]
+    orientation: [ 0.0616284,  0.704416, 0.704416, -0.0616284]
+  cable_1:
+    position: [ 0.05, 0.08, 0.20 ]
+    orientation: [ 0.0, 0.819, 0.0, 0.574 ]
+  cable_2:
+    position: [ 0.091, 0.08, 0.20 ]
+    orientation: [ 0.0, 0.819, 0.0, 0.574 ]
+  cable_first_end_1:
+    position: [ 0.15, -0.04, 0.05 ]
+    orientation: [ 0.0, -0.7071068, 0.7071068, 0.0 ]
+  cable_first_end_2:
+    position: [ 0.24, -0.04, -0.02 ]
+    orientation: [ 0.0, -0.7071068, 0.7071068, 0.0 ]
+  cable_first_end_3:
+    position: [ 0.24, -0.04, 0.0 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  cable_first_end_4:
+    position: [ 0.23, 0.06, -0.065 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  cable_first_end_5:
+    position: [ 0.21, 0.26, -0.02 ]
+    orientation: [ 0.0, 0.7071068, 0.7071068, 0.0 ]
+  cable_first_end_6:
+    position: [ 0.17, 0.28, -0.02 ]
+    orientation: [ 0.0, 0.7071068, 0.7071068, 0.0 ]
+  cable_first_end_7:
+    position: [ 0.143, 0.28, 0.06 ]
+    orientation: [ 0.0, 0.7071068, 0.7071068, 0.0 ]
+  cable_first_end_8:
+    position: [ 0.16, 0.28, 0.06 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  cable_first_end_9:
+    position: [ 0.2, 0.08, 0.08 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
+  cable_first_end_10:
+    position: [ 0.16, 0.08, 0.06 ]
+    orientation: [ 0.0, -0.7071068, 0.7071068, 0.0 ]
+  cable_first_end_11:
+    position: [ 0.14, 0.0, 0.06 ]
+    orientation: [ 0.0, -0.7071068, 0.7071068, 0.0 ]
+  cable_first_end_12:
+    position: [ 0.14, -0.1, 0.06 ]
+    orientation: [ 0.0, -0.7071068, 0.7071068, 0.0 ]
+  pen_back_insertion:
+    position: [ 0.135, 0.226, 0.008 ]
+    orientation: [ 0.0, 1.0, 0.0, 0.0 ]
