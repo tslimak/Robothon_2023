@@ -1,11 +1,45 @@
-## Environment & System Configuration
-The project is developed and tested with the following configuration:
-* Ubuntu 20.04
-* Kernel: 5.9.1-rt20
-* gcc/g++ 9.4.0
-* cmake 3.16.3
-* C++20
+![Robothon 2022 Repository of Team "Wall-E 3.0"](Title_robo.png?raw=true "Title")
 
+
+# Equipment Used List
+![Equipment Images](Equipment_Images.png?raw=true "Title")
+- Franka Emika Panda Robot
+- Intel RealSense D435i
+- Standard PC with Ubuntu 18.04 (no GPU!)
+- Spotlight for repeatable light conditions
+- 3D-printed robot attachment for extracting the batteries incl. magnet
+- 3D-printed taskboard holder, which holds the taskboard always in the same place after it was pushed in from a random position. Springs prevent the taskboard from moving
+- 3D-printed fingers (PETG) with rubber on surface
+- Wooden plate as working space
+- Checkerboard (printed)
+- Charuco Marker (printed)
+- Metal Tip (for Hand-Eye-Calibration)
+
+# Software Dependency List
+![Software Dependency Logos](logos.png?raw=true "Title")
+#### Robot (C++)
+- Ubuntu 20.04
+- Kernel: 5.9.1-rt20
+- gcc/g++ 9.4.0
+- cmake 3.16.3
+- C++20
+- ROS Melodic
+- Eigen
+- franka_ros
+- ros-planning / geometric_shapes
+- moveit
+- rviz
+- libfranka
+
+#### Vision (Python)
+- Intrinsic camera calibration: ROS camera_calibration
+- Tip calibration: custom implementation
+- Hand-eye Calibration: ROS easy_handeye
+- Hand-eye Calibration Optimization: custom implementation
+- 6D Object Pose Estimation of Taskboard: custom implemenation based on ROS planar_pose
+
+
+# Quick Start Guide
 ## Build
 1. Install *ROS Noetic* as described [here](http://wiki.ros.org/noetic/Installation/Ubuntu).
 1. Make sure you have the most up to date packages:
@@ -26,6 +60,7 @@ catkin build
 ```
 
 ## Run the Taskboard
+![Screenshot of Project Running](Project_Running.png?raw=true "Title")
 Open four terminals and navigate to the `catkin_ws` folder in each. Run:
   1. `roslaunch task_planner run_application.launch`
   1. `roslaunch realsense2_camera rs_camera.launch align_depth:=true filters:=pointcloud ordered_pc:=true`
