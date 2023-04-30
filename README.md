@@ -1,15 +1,13 @@
-![Robothon 2022 Repository of Team "Wall-E 3.0"](Title_robo-3.png?raw=true "Title")
+![Robothon 2022 Repository of Team "Wall-E 3.0"](Title_robo.png?raw=true "Title")
 
 
-# Equipment Used List
-![Equipment Images](Equipment_Images-3.png?raw=true "Title")
-- Franka Emika Panda Robot
-- Intel RealSense D435i
-- Standard PC with Ubuntu 18.04 (no GPU!)
+# Equipment List
+![Equipment Images](Equipment_Images.png?raw=true "Title")
+- 2 x Franka Emika Robot
+- robominds vision system
+- Standard PC with Ubuntu 20.04 (no GPU!)
 - Spotlight for repeatable light conditions
-- 3D-printed robot attachment for extracting the batteries incl. magnet
-- 3D-printed taskboard holder, which holds the taskboard always in the same place after it was pushed in from a random position. Springs prevent the taskboard from moving
-- 3D-printed fingers (PETG) with rubber on surface
+- 3D-printed robot attachment for cable handling
 - Wooden plate as working space
 - Checkerboard (printed)
 - Charuco Marker (printed)
@@ -23,11 +21,12 @@
 - gcc/g++ 9.4.0
 - cmake 3.16.3
 - C++20
-- ROS Melodic
+- ROS Noetic
 - Eigen
 - franka_ros
 - ros-planning / geometric_shapes
-- moveit
+- MoveIt!
+- openCV
 - rviz
 - libfranka
 
@@ -37,7 +36,6 @@
 - Hand-eye Calibration: ROS easy_handeye
 - Hand-eye Calibration Optimization: custom implementation
 - 6D Object Pose Estimation of Taskboard: custom implemenation based on ROS planar_pose
-
 
 # Quick Start Guide
 ## Build
